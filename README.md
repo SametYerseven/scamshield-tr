@@ -28,6 +28,38 @@ Kullanıcı (Web / Telegram botu)
  Sonuç + açıklama
 ```
 
+## Mevcut Durum (19 Kasım)
+
+Tamamlananlar:
+
+- **Metin sınıflandırma modelinin ilk versiyonu:** [notebooks/01_baseline_model.ipynb](notebooks/01_baseline_model.ipynb)
+  - Veri seti: Turkish SMS Collection, 4.751 mesaj (ayrıntı: [data/README.md](data/README.md))
+  - Üç model karşılaştırıldı: Lojistik Regresyon, Naive Bayes, Doğrusal SVM
+  - En iyi model Lojistik Regresyon: test setindeki 948 mesajın 947'sini doğru bildi (F1 = 0,999)
+  - Önemli not: Veri setindeki spam mesajların çoğu reklam olduğu için bu sonuç gerçek dolandırıcılık mesajlarındaki başarıyı yansıtmıyor. Bu yüzden kendi dolandırıcılık veri setimizi toplayıp BERTurk modeline geçeceğiz.
+- **Ara raporun model bölümleri yazıldı:** Yöntem, Mevcut İlerleme, Karşılaşılan Sorunlar ve Çözümler, Sonraki Adımlar, Kaynaklar. Belgenin linki WhatsApp grubunda paylaşıldı. Bu bölümler rapora olduğu gibi eklenebilir.
+
+Ara rapor için kalanlar:
+
+- Kapak (proje adı, takım üyeleri ve numaraları, takım lideri, tarih)
+- Giriş, Amaç, Sosyal Katkı
+- Benzer Çalışmalar
+- Sistem Tasarımı (mimari diyagram) ve Kullanılan Teknolojiler
+- Mevcut İlerleme: veri toplama ve arayüz taslağı kısmı
+- Görev Dağılımı tablosu
+- Zaman Planı
+- Etik ve Veri Gizliliği
+- Bölümlerin tek dosyada birleştirilmesi, PDF olarak 23 Kasım'a kadar yüklenmesi
+
+## Notebook Nasıl Çalıştırılır?
+
+1. Kaggle'daki [Turkish SMS Collection](https://www.kaggle.com/datasets/onurkarasoy/turkish-sms-collection) sayfasından veriyi indir, zip'i aç. İçinden `TurkishSMSCollection.csv` çıkar.
+2. [colab.research.google.com](https://colab.research.google.com) adresine git. **File → Open notebook → GitHub** yolunu seç.
+3. Arama kutusuna `SametYerseven/scamshield-tr` yaz, `notebooks/01_baseline_model.ipynb` dosyasını aç.
+4. **Runtime → Run all** de. "Not authored by Google" uyarısına **Run anyway** de.
+5. **Dosya seç** butonu çıkınca CSV dosyasını seç. Çalışma 2-5 dakika sürer.
+6. En sonda `baseline_sonuclari.zip` iner. İçinde rapordaki grafikler ve tablolar var.
+
 ## Projedeki İşler
 
 Takım lideri: Samet Yerseven. Görev dağılımı ekip içinde belirlenecek.
@@ -46,13 +78,13 @@ Takım lideri: Samet Yerseven. Görev dağılımı ekip içinde belirlenecek.
 
 | İş | Rapordaki bölüm | Yapılacak |
 |---|---|---|
-| Metin sınıflandırma modeli | Yöntem, Mevcut İlerleme | Basit model eğitip sonuçları çıkarmak |
+| Metin sınıflandırma modeli | Yöntem, Mevcut İlerleme | Tamamlandı |
 | Veri | Etik ve Veri Gizliliği | Veri setlerini araştırmak, 50-100 örnek mesaj toplamak |
 | Link analizi | Benzer Çalışmalar, Kaynaklar | Örnek zararlı linkleri inceleyip ortak özelliklerini çıkarmak |
 | Backend | Sistem Tasarımı, Kullanılan Teknolojiler | Mimari diyagram |
 | Arayüz ve dokümantasyon | Giriş, Amaç, Sosyal Katkı, Zaman Planı | Arayüz taslağı, raporun birleştirilmesi |
 
-Görev Dağılımı ile Karşılaşılan Sorunlar ve Çözümler bölümleri ekipçe yazılacak.
+Görev Dağılımı bölümü ekipçe yazılacak. Karşılaşılan Sorunlar ve Çözümler bölümünün model kısmı hazır; diğer işlerde karşılaşılan sorunlar da bu bölüme eklenecek.
 
 ## Takvim
 
