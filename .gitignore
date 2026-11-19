@@ -1,0 +1,12 @@
+# Veri dosyaları repoya yüklenmez (lisans + KVKK)
+data/*
+!data/README.md
+
+# Notebook çıktıları
+ciktilar/
+*.zip
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
