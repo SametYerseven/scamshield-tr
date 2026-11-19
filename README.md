@@ -39,7 +39,7 @@ Kullanıcı (Web / Telegram botu)
 
 | Kişi | Rol | Ne yapacak? |
 |---|---|---|
-| _İsim_ (Takım Lideri) | **Yapay Zekâ / NLP** | Mesaj metnini sınıflandıran model (önce basit model, sonra BERTurk) |
+| Samet Yerseven (Takım Lideri) | **Yapay Zekâ / NLP** | Mesaj metnini sınıflandıran model (önce basit model, sonra BERTurk) |
 | _İsim_ | **Veri** | Veri setlerini bulmak, örnek mesaj toplamak, etiketlemek, kişisel bilgileri maskelemek |
 | _İsim_ | **Siber Güvenlik / Link Analizi** | Sahte linkleri tespit eden model, USOM ve PhishTank listeleri |
 | _İsim_ | **Backend + LLM** | API (FastAPI), modelleri birbirine bağlamak, LLM ile açıklama üretmek, canlıya almak |
